@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./styles/nav-partial.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+<div class="picture-frame">
+    <img src="./images/plane-hero.jpg" alt="breathtaking view of plane taking off">
+    <div class="zenpilot-title">
+        <h1>Zen Pilot</h1>
+        <h5>mindful tips to </h5>
+        <h5>navigate your life</h5>
+    </div>
+</div>
+
+
+<div class="nav-bar" data-nav>
+    <a href="/"><h3> Home </h3> </a> <h3>|</h3> <a href="/blog"><h3>Journal</h3></a> <h3>| </h3> <a href="/checklists"><h3>Checklists </h3></a> <h3>| </h3> <a href="/about"> <h3>About </h3></a> <h3>| </h3> <a href="/press"><h3>Read </h3></a>
+</div>
+<script nav-script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 275 || document.documentElement.scrollTop > 275) {
+            document.querySelector("[data-nav]").style.top = "-60px"
+        }
+        else{
+            document.querySelector("[data-nav]").style.top = "0"
+        }
+    }
+
+</script>

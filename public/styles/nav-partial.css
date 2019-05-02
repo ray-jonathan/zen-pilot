@@ -1,0 +1,94 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Chalkduster';
+    src:
+        /* url('/fonts/Chalkduster.ttf.woff') format('woff'), */
+        url('/fonts/Chalkduster.ttf.svg#Chalkduster') format('svg'),
+        url('/fonts/Chalkduster.ttf.eot'),
+        url('/fonts/Chalkduster.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* FOR IMAGES / HERO IMAGE */
+.picture-frame{
+    width:100%;
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+}
+.picture-frame img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200%;
+}
+.zenpilot-title{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.zenpilot-title h1{
+    font-family: 'Chalkduster';
+    margin: .3rem;
+}
+.zenpilot-title h5{
+    font-family: 'Chalkduster';
+    margin:0;
+}
+
+/* FOR NAV BAR */
+.nav-bar {
+    background-color: rgba(0,0,0,.3); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /*Hide the navbar 50 px outside of the top view*/
+    width: 100%; /* Full width */
+    transition:  0.3s; /* Transition effect when sliding down (and up) */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.nav-bar h3 {
+    color: rgba(255,255,255,.8);
+}
+.nav-bar h3:hover {
+    color: #FFF;
+    font-weight: bolder;
+    text-shadow: 1px 1px rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px) {
+    .picture-frame{
+    }
+    .picture-frame img{
+        position: relative;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+    }
+    }

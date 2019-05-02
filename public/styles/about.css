@@ -1,0 +1,31 @@
+.about-picture-frame{
+    width: 60%;
+    float: left;
+    /* overflow-x: hidden; */
+    /* position: relative; */
+    /* text-align: center; */
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+.about-picture-frame img{
+    /* position: relative; */
+    /* left: 50%;
+    transform: translate(-50%); */
+    width: 100%;
+}
+
+.about-copy{
+    display: inline-block;
+    padding:10px;
+}
+.about-copy p{
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 450px) {
+    .about-picture-frame{
+        width: 40%;
+    }
+    }

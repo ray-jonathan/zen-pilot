@@ -1,0 +1,67 @@
+.press-button-frame{
+    width: 14rem;
+    margin: 20px;
+    /* float: left;
+    padding-top: 10px;
+    padding-right: 10px; */
+
+}
+.press-button-frame img{
+    width: 100%;
+}
+.press-picture-frame{
+    width: 14rem;
+}
+.press-picture-frame img{
+    width: 100%;
+}
+
+.press-button:hover{
+    font-weight: 900;
+    background-color: rgba(96,192,220,.7);
+    color: rgba(255,255,255,1);
+    text-shadow: .5px .5px rgba(0,0,0,.5);
+
+}
+.press-button{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(96,192,220);
+    color: rgba(255,255,255,.95);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.press-button p{
+    margin:0;
+}
+
+.press-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.press-button-contents{
+    width:100%;
+    display: flex;
+    padding-left:5px;
+    padding-right:5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+}
+
+p{
+    text-align: center
+}
+
+@media screen and (min-width: 450px) {
+    .about-picture-frame{
+        width: 40%;
+    }
+    }
